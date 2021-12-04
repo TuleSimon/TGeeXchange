@@ -20,7 +20,7 @@ export const Contact = (props) => {
     console.log(name, email, message)
     emailjs
       .sendForm(
-        'YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_USER_ID'
+        'service_s74ep57', 'template_3418kv7', e.target, 'user_cozVpqgMHDZyInQOCOYCD'
       )
       .then(
         (result) => {
@@ -100,9 +100,9 @@ export const Contact = (props) => {
               <h3>Contact Info</h3>
               <p>
                 <span>
-                  <i className='fa fa-map-marker'></i> Address
+                  <i className='fa fa-whatsapp'></i> Whatsapp
                 </span>
-                {props.data ? props.data.address : 'loading'}
+                {props.data ? props.data.facebook : 'loading'}
               </p>
             </div>
             <div className='contact-item'>
@@ -127,8 +127,8 @@ export const Contact = (props) => {
               <div className='social'>
                 <ul>
                   <li>
-                    <a href={props.data ? props.data.facebook : '/'}>
-                      <i className='fa fa-facebook'></i>
+                    <a href={props.data ? props.data.whatsapp : '/'}>
+                      <i className='fa fa-whatsapp'></i>
                     </a>
                   </li>
                   <li>
@@ -150,9 +150,9 @@ export const Contact = (props) => {
       <div id='footer'>
         <div className='container text-center'>
           <p>
-            &copy; 2020 Issaaf Kattan React Land Page Template. Design by{' '}
-            <a href='http://www.templatewire.com' rel='nofollow'>
-              TemplateWire
+            &copy; 2021 XDevs. Designed by{' '}
+            <a href='http://www.facebook.com/thee.horrorcorian.1' rel='nofollow'>
+              XDevs
             </a>
           </p>
         </div>
